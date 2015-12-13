@@ -8,12 +8,16 @@ Overview
 --------
 
 ```ruby
-require "feature/cache"
+require "feature/basic_initialize"
 
 class Person
   Feature::BasicInitialize.load(self)
 
   attr_accessor :name, :age
+
+  def self.defaults
+    {likes_coffee: true}
+  end
 end
 
 Person.new(name: "Joe", age: 29)

@@ -8,6 +8,10 @@ module Feature
   #     Feature::BasicInitialize.load(self)
   #
   #     attr_accessor :name, :age
+  #
+  #     def self.defaults
+  #       {likes_coffee: true}
+  #     end
   #   end
   #
   #   Person.new(name: "Joe", age: 29)
